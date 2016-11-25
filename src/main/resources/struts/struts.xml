@@ -6,8 +6,7 @@
 
 <struts>
     <package name="default" extends="struts-default" namespace="/">
-        <action name="helloworld" class="com.github.gorden5566.struts2.HelloWorldAction" method="helloworld">
-            <result name="success">/jsp/helloworld.jsp</result>
-        </action>
+
     </package>
+    <include file="struts/struts2-demos.xml" />
 </struts>
