@@ -15,10 +15,30 @@
             <artifactId>struts2-core</artifactId>
             <version>${struts2-core.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
 
     <properties>
         <struts2-core.version>2.3.31</struts2-core.version>
+        <log4j-core.version>2.7</log4j-core.version>
+        <slf4j.version>1.7.21</slf4j.version>
     </properties>
 
 </project>
