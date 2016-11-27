@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+    <select id="getUserById" parameterClass="java.lang.Long" resultClass="com.github.gorden5566.struts2.demos.dto.User">
+        SELECT
+            ID as id,
+            USERNAME as userName
+        FROM USER
+        WHERE
+          ID = #id#
+    </select>
+</sqlMap>
