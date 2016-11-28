@@ -7,4 +7,8 @@
 
     </bean>
 
+    <bean id="userAction" class="com.github.gorden5566.struts2.action.UserAction" scope="prototype">
+        <property name="userService" ref="userService"></property>
+    </bean>
+
 </beans>

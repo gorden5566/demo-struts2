@@ -7,4 +7,8 @@
         <property name="sqlMapClient" ref="sqlMapClient"/>
     </bean>
 
+    <bean id="userService" class="com.github.gorden5566.struts2.demos.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
 </beans>

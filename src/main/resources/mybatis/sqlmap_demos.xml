@@ -10,4 +10,10 @@
         WHERE
           ID = #id#
     </select>
+    <select id="getAllUser" resultClass="com.github.gorden5566.struts2.demos.dto.User">
+        SELECT
+            ID as id,
+            USERNAME as userName
+        FROM USER
+    </select>
 </sqlMap>

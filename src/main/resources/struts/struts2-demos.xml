@@ -9,5 +9,8 @@
         <action name="helloworld" class="helloWorldAction" method="helloworld">
             <result name="success">/jsp/helloworld.jsp</result>
         </action>
+        <action name="showAllUser" class="userAction" method="showAllUsers">
+            <result name="success">/jsp/user.jsp</result>
+        </action>
     </package>
 </struts>
