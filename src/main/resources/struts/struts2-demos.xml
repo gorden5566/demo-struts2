@@ -9,8 +9,17 @@
         <action name="helloworld" class="helloWorldAction" method="helloworld">
             <result name="success">/jsp/helloworld.jsp</result>
         </action>
+
         <action name="showAllUser" class="userAction" method="showAllUsers">
             <result name="success">/jsp/user.jsp</result>
+        </action>
+
+        <action name="addUser" class="userAction" method="addUser">
+            <result type="redirectAction">showAllUser</result>
+        </action>
+
+        <action name="deleteUserById" class="userAction" method="deleteUserById">
+            <result type="redirectAction">showAllUser</result>
         </action>
     </package>
 </struts>

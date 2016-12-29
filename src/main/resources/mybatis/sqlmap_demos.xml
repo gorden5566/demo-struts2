@@ -16,4 +16,16 @@
             USERNAME as userName
         FROM USER
     </select>
+    <insert id="addUser" parameterClass="com.github.gorden5566.struts2.demos.dto.User">
+        INSERT INTO USER(
+            USERNAME
+        ) VALUES (
+            #userName#
+        )
+    </insert>
+    <delete id="deleteUserById" parameterClass="java.lang.Long">
+        DELETE FROM USER
+        WHERE
+            ID = #id#
+    </delete>
 </sqlMap>

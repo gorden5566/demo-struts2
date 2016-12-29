@@ -22,7 +22,7 @@
         <tr>
             <td>2</td>
             <td><a href="<%=path%>/demos/showAllUser.action" target="_blank">数据库读取</a> </td>
-            <td>数据库读取demo</td>
+            <td>数据库操作demo</td>
             <td>需先执行USER.sql</td>
         </tr>
     </table>

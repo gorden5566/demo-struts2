@@ -21,4 +21,14 @@ public class UserDaoImpl extends SqlMapClientDaoSupport implements UserDao {
     public List<User> getAllUser() {
         return getSqlMapClientTemplate().queryForList("getAllUser");
     }
+
+    @Override
+    public Long addUser(User user) {
+        return (Long) getSqlMapClientTemplate().insert("addUser", user);
+    }
+
+    @Override
+    public Integer deleteUserById(Long id) {
+        return getSqlMapClientTemplate().delete("deleteUserById", id);
+    }
 }
