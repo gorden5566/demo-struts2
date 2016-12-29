@@ -19,4 +19,18 @@ public interface UserService {
      */
     public List<User> getAllUser();
 
+    /**
+     * 添加用户
+     * @param user
+     * @return
+     */
+    public Long addUser(User user);
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    public Integer deleteUserById(Long id);
+
 }

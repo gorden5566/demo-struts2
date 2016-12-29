@@ -28,6 +28,23 @@ public class UserServiceImpl implements UserService{
         return userDao.getAllUser();
     }
 
+    @Override
+    public Long addUser(User user) {
+        Long userId = null;
+        if (user != null) {
+            userId = userDao.addUser(user);
+        }
+        return userId;
+    }
+
+    @Override
+    public Integer deleteUserById(Long id) {
+        if (id == null) {
+            return 0;
+        }
+        return userDao.deleteUserById(id);
+    }
+
     public UserDao getUserDao() {
         return userDao;
     }
