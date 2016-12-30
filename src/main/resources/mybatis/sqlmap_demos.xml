@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
         "http://ibatis.apache.org/dtd/sql-map-2.dtd">
-<sqlMap>
-    <select id="getUserById" parameterClass="java.lang.Long" resultClass="com.github.gorden5566.struts2.demos.dto.User">
+<sqlMap namespace="demos">
+    <typeAlias alias="user" type="com.github.gorden5566.struts2.demos.dto.User"/>
+
+    <cacheModel id="user-cache" type="LRU" readOnly="false" serialize="false">
+        <flushInterval milliseconds="10"/>
+        <flushOnExecute statement="addUser"/>
+        <flushOnExecute statement="deleteUserById"/>
+        <property name="size" value="1000" />
+    </cacheModel>
+
+    <select id="getUserById" parameterClass="java.lang.Long" resultClass="user">
         SELECT
             ID as id,
             USERNAME as userName
@@ -10,19 +19,22 @@
         WHERE
           ID = #id#
     </select>
-    <select id="getAllUser" resultClass="com.github.gorden5566.struts2.demos.dto.User">
+
+    <select id="getAllUser" resultClass="user" cacheModel="user-cache">
         SELECT
             ID as id,
             USERNAME as userName
         FROM USER
     </select>
-    <insert id="addUser" parameterClass="com.github.gorden5566.struts2.demos.dto.User">
+
+    <insert id="addUser" parameterClass="user">
         INSERT INTO USER(
             USERNAME
         ) VALUES (
             #userName#
         )
     </insert>
+
     <delete id="deleteUserById" parameterClass="java.lang.Long">
         DELETE FROM USER
         WHERE
