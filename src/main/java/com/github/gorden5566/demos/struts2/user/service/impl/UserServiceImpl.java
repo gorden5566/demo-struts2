@@ -1,8 +1,8 @@
-package com.github.gorden5566.struts2.demos.service.impl;
+package com.github.gorden5566.demos.struts2.user.service.impl;
 
-import com.github.gorden5566.struts2.demos.dao.UserDao;
-import com.github.gorden5566.struts2.demos.dto.User;
-import com.github.gorden5566.struts2.demos.service.UserService;
+import com.github.gorden5566.demos.struts2.user.dao.UserDao;
+import com.github.gorden5566.demos.struts2.user.dto.User;
+import com.github.gorden5566.demos.struts2.user.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

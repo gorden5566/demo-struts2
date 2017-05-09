@@ -1,4 +1,4 @@
-package com.github.gorden5566.struts2.action;
+package com.github.gorden5566.demos.struts2.helloworld.action;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

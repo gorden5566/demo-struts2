@@ -1,4 +1,4 @@
-package com.github.gorden5566.struts2.demos.dao;
+package com.github.gorden5566.demos.struts2.user.dao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

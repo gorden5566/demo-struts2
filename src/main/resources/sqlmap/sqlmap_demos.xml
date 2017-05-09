@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.github.gorden5566.struts2.demos">
+<mapper namespace="com.github.gorden5566.demos.struts2.demos">
     <select id="getUserById" parameterType="java.lang.Long" resultType="user">
         SELECT
             ID as id,

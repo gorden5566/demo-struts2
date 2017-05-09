@@ -1,7 +1,7 @@
-package com.github.gorden5566.struts2.action;
+package com.github.gorden5566.demos.struts2.user.action;
 
-import com.github.gorden5566.struts2.demos.dto.User;
-import com.github.gorden5566.struts2.demos.service.UserService;
+import com.github.gorden5566.demos.struts2.user.dto.User;
+import com.github.gorden5566.demos.struts2.user.service.UserService;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

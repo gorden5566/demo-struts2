@@ -1,6 +1,6 @@
-package com.github.gorden5566.struts2.demos.service;
+package com.github.gorden5566.demos.struts2.user.service;
 
-import com.github.gorden5566.struts2.demos.dto.User;
+import com.github.gorden5566.demos.struts2.user.dto.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.github.gorden5566.struts2.demos.dto;
+package com.github.gorden5566.demos.struts2.user.dto;
 
 public class User {
     private Long id;

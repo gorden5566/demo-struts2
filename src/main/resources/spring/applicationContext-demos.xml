@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userDao" class="com.github.gorden5566.struts2.demos.dao.impl.UserDaoImpl">
+    <bean id="userDao" class="com.github.gorden5566.demos.struts2.user.dao.impl.UserDaoImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
-    <bean id="userService" class="com.github.gorden5566.struts2.demos.service.impl.UserServiceImpl">
+    <bean id="userService" class="com.github.gorden5566.demos.struts2.user.service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"/>
     </bean>
 
