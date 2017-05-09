@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
-        "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
-<sqlMapConfig>
-    <sqlMap resource="sqlmap/sqlmap_demos.xml"/>
-</sqlMapConfig>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="user" type="com.github.gorden5566.struts2.demos.dto.User" />
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="sqlmap/sqlmap_demos.xml"/>
+    </mappers>
+
+</configuration>

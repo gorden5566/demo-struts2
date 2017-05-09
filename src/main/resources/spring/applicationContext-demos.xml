@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="userDao" class="com.github.gorden5566.struts2.demos.dao.impl.UserDaoImpl">
-        <property name="sqlMapClient" ref="sqlMapClient"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
     <bean id="userService" class="com.github.gorden5566.struts2.demos.service.impl.UserServiceImpl">
