@@ -22,10 +22,23 @@
             <version>${hessian.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
     </dependencies>
 
     <properties>
         <hessian.version>4.0.38</hessian.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
     </properties>
 
 </project>
