@@ -5,6 +5,9 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+    <!-- 指定struts扩展名，避免和hessian冲突 -->
+    <constant name="struts.action.extension" value="action"></constant>
+
     <package name="default" extends="struts-default" namespace="/">
 
     </package>
