@@ -7,7 +7,7 @@ service:
     - mysql
 
 before_install:
-    - mysql -h localhost -u root < src/test/resources/sql/USER.sql
+    - mysql -h localhost -u root < demo-struts2-web/src/test/resources/sql/USER.sql
 
 install:
     - mvn install -Dmaven.test.skip=true
