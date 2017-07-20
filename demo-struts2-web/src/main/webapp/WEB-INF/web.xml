@@ -14,7 +14,7 @@
     </context-param>
 
     <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        <listener-class>com.github.gorden5566.demos.struts2.listener.SpringListener</listener-class>
     </listener>
 
     <filter>
