@@ -11,7 +11,7 @@ import javax.servlet.ServletContextEvent;
  */
 public class SpringListener extends ContextLoaderListener {
 
-    private ApplicationContext applicationContext;
+    private static ApplicationContext applicationContext;
 
     @Override
     public void contextInitialized(ServletContextEvent event) {
@@ -19,11 +19,11 @@ public class SpringListener extends ContextLoaderListener {
         applicationContext = WebApplicationContextUtils.getWebApplicationContext(event.getServletContext());
     }
 
-    public Object getBean(String beanName) {
+    public static Object getBean(String beanName) {
         return applicationContext.getBean(beanName);
     }
 
-    public <T>T getBean(String beanName, Class<T> clazz) {
+    public static  <T>T getBean(String beanName, Class<T> clazz) {
         return applicationContext.getBean(beanName, clazz);
     }
 }
